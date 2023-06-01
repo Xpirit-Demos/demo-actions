@@ -21,14 +21,14 @@ jobs:
   # This is the first job
   init: 
     name: Friendly name for the UI
-    runs-on: self-hosted
+    runs-on: ghe-runner-w202
     steps: 
       - run: echo Hello init
     
   # This is the second job
   build:
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: ghe-runner-w202
     needs: init
 
     # Steps represent a sequence of tasks that will be executed as part of the job
